@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>TEST </title>
+    <title>YOSHIDA Norifumi's Portfolio</title>
     <link href="/css/template.css" rel="stylesheet" type="text/css">
     <link href=@yield("css_address") rel="stylesheet" type="text/css">
   <body>
