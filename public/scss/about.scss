@@ -1,0 +1,30 @@
+$bgcolor : #ffffff;
+.right_contents{
+  &_title{
+    font-size: 30px;
+    padding-top: 2em;
+    padding-right: 2em;
+    margin-left: calc(100%/2 - 200px / 2);
+  }
+  &_main{
+    &-container{
+      height: auto;
+      margin: 20px auto;
+      width: 70%;
+      display: flex;
+    }
+    &-title{
+      display: block;
+      width: 150px;
+      margin-left: 15%;
+
+    }
+    &-discription{
+      display: block;
+      width: 450px;
+      margin-left: 20px;
+      margin-right: 25%;
+
+    }
+  }
+}

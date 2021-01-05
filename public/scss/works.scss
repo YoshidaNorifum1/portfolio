@@ -1,0 +1,38 @@
+$bgcolor : #ffffff;
+.right_contents{
+  &_title{
+    font-size: 30px;
+    padding-top: 2em;
+    padding-right: 2em;
+    margin-left: calc(100%/2 - 200px / 2);
+  }
+  &_works{
+    width: 80%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .wrap{
+    display: flex;
+  }
+  &_work{
+    &-image{
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+    }
+    &-text{
+      word-wrap: break-word;
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 50px;
+      margin-left: 50px;
+
+    }
+  }
+}

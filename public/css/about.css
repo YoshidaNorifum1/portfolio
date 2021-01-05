@@ -1,0 +1,23 @@
+.right_contents_title {
+  font-size: 30px;
+  padding-top: 2em;
+  padding-right: 2em;
+  margin-left: calc(100%/2 - 200px / 2);
+}
+.right_contents_main-container {
+  height: auto;
+  margin: 20px auto;
+  width: 70%;
+  display: flex;
+}
+.right_contents_main-title {
+  display: block;
+  width: 150px;
+  margin-left: 15%;
+}
+.right_contents_main-discription {
+  display: block;
+  width: 450px;
+  margin-left: 20px;
+  margin-right: 25%;
+}

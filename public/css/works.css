@@ -1,0 +1,32 @@
+.right_contents_title {
+  font-size: 30px;
+  padding-top: 2em;
+  padding-right: 2em;
+  margin-left: calc(100%/2 - 200px / 2);
+}
+.right_contents_works {
+  width: 80%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right_contents .wrap {
+  display: flex;
+}
+.right_contents_work-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.right_contents_work-text {
+  word-wrap: break-word;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
