@@ -13,13 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
 
-Route::get('/about', function () {
-  return view('about');
-});
+
+Route::get('/', 'App\Http\Controllers\WorkController@home');
+
+Route::get('/about', 'App\Http\Controllers\WorkController@about');
 
 Route::get('/works', 'App\Http\Controllers\WorkController@index');
 
