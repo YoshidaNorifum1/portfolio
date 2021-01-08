@@ -12,10 +12,17 @@
         <img src="{{asset('images/' . $work->images->first()->filename)}}" class="right_contents_work-image"/>
       </a>
 
-      <div class="right_contents_work-text">
-        @if (isset($work->discriptions()->first()->txt))
-          {{$work->discriptions()->first()->txt}}
-        @endif
+      <div class="right_contents_work-texts">
+          <div class="right_contents_work-text">
+            @if (isset($work->discriptions()->first()->txt))
+              {{$work->discriptions()->where('number',0)->first()->txt}}
+            @endif
+          </div>
+          <div class="right_contents_work-text">
+            @if (isset($work->discriptions()->where('number', 2)->first()->txt))
+              {{$work->discriptions()->where('number',2)->first()->txt}}
+            @endif
+          </div>
       </div>
         @auth
           <form action="/works/{{$work->id}}/update" method="post" enctype="multipart/form-data">
