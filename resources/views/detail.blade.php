@@ -27,7 +27,7 @@
     @endforeach
   </div>
   <div class="textwrapper">
-    @foreach ($work->discriptions as $discription)
+    @foreach ($work->discriptions->sortBY('number') as $discription)
       @switch ($discription->type)
         @case (0)
           @auth
@@ -49,6 +49,11 @@
           </div>
           @break
 
+        @case (3)
+	  <a href="{{$discription->txt}}">
+            {{$discription->txt}}
+	  </a>
+          @break
       @endswitch
 
       @auth
@@ -56,18 +61,19 @@
           @csrf
           <br><br>
           <input type="hidden" name="number" value={{$discription->number}}>
-          <input type="text" class="form-text" name="text" value={{$discription->txt}}>
+          <textarea class="form-text" name="text" cols="90" rows="4">{{$discription->txt}}</textarea>
           <select name="type">
             <option value="0">0</option><!--title-->
-            <option value="1" >1</option><!--heading-->
+            <option value="1">1</option><!--heading-->
             <option value="2" selected>2</option><!--passage-->
+            <option value="3">3</option><!--link-->
           </select>
           <input type="submit" class="form-btn" value="edit this discription">
         </form>
 
         <form action="/works/{{$work->id}}/deletepost" method="post">
           @csrf
-          <input type="hidden" name="number" value={{$image->number}}>
+          <input type="hidden" name="number" value={{$discription->number}}>
           <input type="hidden" name="img_or_txt" value="txt">
           <input type="submit" class="form-btn" value="delete this text">
         </form>
@@ -85,8 +91,9 @@
       <input type="text" class="form-text" name="text">
       <select name="type">
         <option value="0">0</option><!--title-->
-        <option value="1" >1</option><!--heading-->
+        <option value="1">1</option><!--heading-->
         <option value="2" selected>2</option><!--passage-->
+        <option value="3">3</option><!--link-->
       </select>
       <input type="submit" class="form-btn" value="add new post">
     </form>
