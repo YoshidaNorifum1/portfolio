@@ -27,7 +27,7 @@
     @endforeach
   </div>
   <div class="textwrapper">
-    @foreach ($work->discriptions as $discription)
+    @foreach ($work->discriptions->sortBY('number') as $discription)
       @switch ($discription->type)
         @case (0)
           @auth
