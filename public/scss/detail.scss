@@ -28,12 +28,20 @@ $bgcolor : #ffffff;
   margin-top: 50px;
   margin-left: 10%;
   opacity: 0;
-  box-shadow: 8px 8px 30px 0px #d0d0d0, -8px -8px 30px 0px #ffffff;
+  border-radius: 20px;
+  box-shadow: 8px 8px 30px 0px #d0d0d0,
+     -8px -8px 30px 0px #ffffff,
+    inset  8px 8px 30px 0px transparent,
+    inset -8px -8px 30px 0px transparent;
+  transition:box-shadow 0.8s;
   animation: fade_in 0.8s ease-in-out 0s forwards;
   &:hover{
-    box-shadow: 0px 0px #ffffff ;
-    transition: 0.3s ease-in-out 0s;
-    }
+  box-shadow: 8px 8px 30px 0px transparent,
+     -8px -8px 30px 0px transparent,
+    inset  8px 8px 30px 0px #d0d0d0,
+    inset -8px -8px 30px 0px #ffffff;
+  transition:box-shadow 0.8s;
+  }
   &:active{
     position: absolute;
     width: 70%;
@@ -42,10 +50,11 @@ $bgcolor : #ffffff;
     margin-left: 0px;
     z-index: 1;
     border: solid 1px;
+    box-shadow: 0px 0px #ffffff;
     transition: 0.3s ease-in-out 0s;
-
   }
 }
+
 .work_texts{
   &-heading{
     font-size: 30px;
@@ -78,9 +87,9 @@ $bgcolor : #ffffff;
   }
 }
 
-
 .form-controll, .form-text, .form-btn{
 }
+
 input.form-text{
 	width:80%;
 	height:200px;

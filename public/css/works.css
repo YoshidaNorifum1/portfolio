@@ -24,11 +24,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 50px;
-  box-shadow: 8px 8px 30px 0px #d0d0d0, -8px -8px 30px 0px #fff;
+  border-radius: 20px;
+  box-shadow: 8px 8px 30px 0px #d0d0d0, -8px -8px 30px 0px #fff, inset 8px 8px 30px 0px transparent, inset -8px -8px 30px 0px transparent;
   transition: box-shadow 0.3s ease-in-out 0s;
 }
 .right_contents_work-image:hover {
-  box-shadow: 0px 0px #fff;
+  box-shadow: 8px 8px 30px 0px transparent, -8px -8px 30px 0px transparent, inset 8px 8px 30px 0px #d0d0d0, inset -8px -8px 30px 0px #fff;
   transition: 0.3s ease-in-out 0s;
 }
 .right_contents_work-text {
