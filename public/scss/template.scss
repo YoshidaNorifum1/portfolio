@@ -59,20 +59,24 @@ body{
   transform: rotate(90deg);
   transition: all 0.3s linear 0s;
 }
- .left_content{
-   line-height: 2.5em;
-   margin-bottom: 3px;
-   text-align: center;
-   background-color: #fbfbfb;
-   filter:drop-shadow(2px 6px 3px #efefef);
-   border: None;
-   opacity: 0;
-   .btn_1, .btn_2, .btn_3{
-     display: block;
-     text-decoration: none;
-     color: #000;
-   }
- }
+  .left_content{
+    line-height: 2.5em;
+    margin-bottom: 3px;
+    text-align: center;
+    background-color: #fbfbfb;
+    filter:drop-shadow(2px 6px 3px #efefef);
+    border: None;
+    opacity: 0;
+    .btn_1, .btn_2, .btn_3{
+      display: block;
+      text-decoration: none;
+      color: #000;
+      &:hover{
+        box-shadow: 8px 8px 30px 0px #d0d0d0,
+                   -8px -8px 30px 0px #ffffff;
+      }
+    }
+  }
  .right_contents{
     display: block;
     width: 100%;
