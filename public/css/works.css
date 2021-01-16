@@ -18,17 +18,33 @@
   height: 500px;
 }
 .right_contents_work-image {
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 100px;
   height: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 50px;
+}
+.right_contents_work-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border-radius: 20px;
   box-shadow: 8px 8px 30px 0px #d0d0d0, -8px -8px 30px 0px #fff, inset 8px 8px 30px 0px transparent, inset -8px -8px 30px 0px transparent;
   transition: box-shadow 0.3s ease-in-out 0s;
 }
-.right_contents_work-image:hover {
+.right_contents_work-image:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
   box-shadow: 8px 8px 30px 0px transparent, -8px -8px 30px 0px transparent, inset 8px 8px 30px 0px #d0d0d0, inset -8px -8px 30px 0px #fff;
   transition: 0.3s ease-in-out 0s;
 }
