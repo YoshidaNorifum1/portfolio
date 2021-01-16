@@ -6,18 +6,40 @@
 }
 .right_contents_main-container {
   height: auto;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 200px;
   width: 70%;
   display: flex;
+  opacity: 0;
 }
 .right_contents_main-title {
   display: block;
   width: 150px;
-  margin-left: 15%;
+  margin-left: 5%;
+  margin-right: 4%;
 }
 .right_contents_main-discription {
   display: block;
-  width: 450px;
-  margin-left: 20px;
-  margin-right: 25%;
+  width: 50%;
+  margin-right: 20%;
+}
+.wrap > [class$="container"]:nth-child(1) {
+  animation: fade_in 0.8s ease-in-out 0.4s forwards;
+}
+.wrap > [class$="container"]:nth-child(2) {
+  animation: fade_in 0.8s ease-in-out 0.8s forwards;
+}
+.wrap > [class$="container"]:nth-child(3) {
+  animation: fade_in 0.8s ease-in-out 1.2s forwards;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
