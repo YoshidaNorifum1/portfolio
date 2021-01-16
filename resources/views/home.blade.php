@@ -17,9 +17,11 @@
       <span>c</span>
       <span>t</span>
     </div>
+    <a href="/about">
     <div class="content-text-menu">
-      MENU
+      MENU/About to see more
     </div>
+    </a>
     <div class="content-text">
       <span>O</span>
       <span>n</span>

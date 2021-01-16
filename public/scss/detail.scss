@@ -36,22 +36,16 @@ $bgcolor : #ffffff;
   transition:box-shadow 0.8s;
   animation: fade_in 0.8s ease-in-out 0s forwards;
   &:hover{
-  box-shadow: 8px 8px 30px 0px transparent,
-     -8px -8px 30px 0px transparent,
-    inset  8px 8px 30px 0px #d0d0d0,
-    inset -8px -8px 30px 0px #ffffff;
-  transition:box-shadow 0.8s;
-  }
-  &:active{
     position: absolute;
-    width: 70%;
-    height: 70%;
-    margin-top: 0px;
-    margin-left: 0px;
+    width: 80%;
+    height:80%;
+    top: 0;
+    left: 0;
     z-index: 1;
     border: solid 1px;
     box-shadow: 0px 0px #ffffff;
-    transition: 0.3s ease-in-out 0s;
+  }
+  &:active{
   }
 }
 
@@ -62,7 +56,6 @@ $bgcolor : #ffffff;
     margin-top: 50px;
     margin-left: 10%;
     animation: slidein 1s cubic-bezier(1, 0.3, 0, 0.75) 0s;
-
   }
   &-passage{
     display: block;

@@ -2,11 +2,11 @@ $bgcolor : #ffffff;
 
 .wrap{
   margin-top: 10%;
+  font-size: 30px;
+  font-family: serif;
 }
 .content-text{
-  margin-left: 30%;
-  font-size: 30px;
-  font-family: sans-serif;
+  margin-left: 40%;
   & span{
     display: inline-block;
     width: auto;
@@ -14,19 +14,21 @@ $bgcolor : #ffffff;
     opacity: 0;
   }
 }
-
+a{
+  text-decoration: none;
+  &:link{color: black;}
+  &:visited{color: black;}
+}
 .content-text-menu{
-  margin-left: 35%;
+  margin-left: 37%;
   margin-top: 30px;
-  font-size: 30px;
-  letter-spacing: 10px;
   font-family: sans-serif;
   font-style:oblique;
   opacity: 0;
   animation: fade_in 0.8s ease-in-out 0.3s forwards;
 }
 
-@for $i from 1 to 100{
+@for $i from 1 to 100 {
   .content-text span:nth-child(#{$i}){
     animation: fade_in 0.3s ease-in-out #{$i * 0.1}s forwards;
 

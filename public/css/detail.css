@@ -33,19 +33,14 @@
   animation: fade_in 0.8s ease-in-out 0s forwards;
 }
 .work_imgs:hover {
-  box-shadow: 8px 8px 30px 0px transparent, -8px -8px 30px 0px transparent, inset 8px 8px 30px 0px #d0d0d0, inset -8px -8px 30px 0px #fff;
-  transition: box-shadow 0.8s;
-}
-.work_imgs:active {
   position: absolute;
-  width: 70%;
-  height: 70%;
-  margin-top: 0px;
-  margin-left: 0px;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
   z-index: 1;
   border: solid 1px;
   box-shadow: 0px 0px #fff;
-  transition: 0.3s ease-in-out 0s;
 }
 .work_texts-heading {
   font-size: 30px;

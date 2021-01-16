@@ -28,10 +28,86 @@ $bgcolor : #ffffff;
       margin-right: 20%;
     }
   }
+  &_skill{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    width: 70%;
+    display: flex;
+    &-text{
+      width: 100px;
+      margin-left: 7%;
+      margin-right: 1%;
+    }
+    &-bar{
+      margin: 10px auto;
+      margin-left: 5%;
+      height: 10px;
+      background-color: black;
+      border-radius: 10px;
+      animation: stretch 1s;
+    }
+    &-discription{
+      margin-left: calc(200px + 5%);
+    }
+  }
 }
-
+.skill-title{
+      margin-left: calc(200px + 5%);
+      font-family: serif;
+      font-size: 25px;
+}
+.guide{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+  width: 70%;
+  display: flex;
+  font-size: 7px;
+  &_start{
+    margin-top: 8px;
+    width: 100px;
+    margin-left: 7%;
+    margin-right: 1%;
+    text-align: right;
+  }
+  &_bar{
+    margin-top: 10px;
+    margin-left: 5%;
+    height: 10px;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 10px;
+    display: flex;
+    animation: stretch 1s;
+    &-dots1,&-dots2,&-dots3{
+      width: 8px;
+      height: 8px;
+      border-radius: 5px;
+      margin-top: 1px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+    &-dots1{
+      position: absolute;
+      margin-left: 50px;
+    }
+    &-dots2{
+      position: absolute;
+      margin-left: 100px;
+    }
+    &-dots3{
+      position: absolute;
+      margin-left: 150px;
+    }
+  }
+  &_end{
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+}
 @for $index from 1 through 3{
-  .wrap > [class$="container"]:nth-child(#{$index}){
+  .wrap_main > [class$="container"]:nth-child(#{$index}){
     animation: fade_in 0.8s ease-in-out #{$index * 0.4}s forwards;
   }
 }
@@ -44,5 +120,12 @@ $bgcolor : #ffffff;
   100%{
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes stretch{
+  0%{
+    opacity: 0;
+    width:0px;
   }
 }
