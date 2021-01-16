@@ -26,8 +26,9 @@
   height: 100px;
   margin-top: 50px;
   margin-left: 10%;
-  box-shadow: 3px 3px 30px 0px #c0c0c0, -3px -3px 30px 0px #fff;
-  transition: 0.3s ease-in-out 0s;
+  opacity: 0;
+  box-shadow: 8px 8px 30px 0px #d0d0d0, -8px -8px 30px 0px #fff;
+  animation: fade_in 0.8s ease-in-out 0s forwards;
 }
 .work_imgs:hover {
   box-shadow: 0px 0px #fff;
@@ -43,14 +44,12 @@
   border: solid 1px;
   transition: 0.3s ease-in-out 0s;
 }
-.work_texts {
-  display: block;
-}
 .work_texts-heading {
   font-size: 30px;
   font-style: bold;
   margin-top: 50px;
   margin-left: 10%;
+  animation: slidein 1s cubic-bezier(1, 0.3, 0, 0.75) 0s;
 }
 .work_texts-passage {
   display: block;
@@ -58,10 +57,334 @@
   width: 70%;
   margin-top: 20px;
   margin-left: 15%;
+  opacity: 0;
+}
+.work_texts-link {
+  margin-left: 15%;
+  margin-top: 20px;
+  opacity: 0;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(1), .textwrapper > [class^="work_texts-link"]:nth-child(1) {
+  animation: fade_in 0.8s ease-in-out 0.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(2), .textwrapper > [class^="work_texts-link"]:nth-child(2) {
+  animation: fade_in 0.8s ease-in-out 0.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(3), .textwrapper > [class^="work_texts-link"]:nth-child(3) {
+  animation: fade_in 0.8s ease-in-out 0.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(4), .textwrapper > [class^="work_texts-link"]:nth-child(4) {
+  animation: fade_in 0.8s ease-in-out 0.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(5), .textwrapper > [class^="work_texts-link"]:nth-child(5) {
+  animation: fade_in 0.8s ease-in-out 1s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(6), .textwrapper > [class^="work_texts-link"]:nth-child(6) {
+  animation: fade_in 0.8s ease-in-out 1.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(7), .textwrapper > [class^="work_texts-link"]:nth-child(7) {
+  animation: fade_in 0.8s ease-in-out 1.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(8), .textwrapper > [class^="work_texts-link"]:nth-child(8) {
+  animation: fade_in 0.8s ease-in-out 1.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(9), .textwrapper > [class^="work_texts-link"]:nth-child(9) {
+  animation: fade_in 0.8s ease-in-out 1.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(10), .textwrapper > [class^="work_texts-link"]:nth-child(10) {
+  animation: fade_in 0.8s ease-in-out 2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(11), .textwrapper > [class^="work_texts-link"]:nth-child(11) {
+  animation: fade_in 0.8s ease-in-out 2.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(12), .textwrapper > [class^="work_texts-link"]:nth-child(12) {
+  animation: fade_in 0.8s ease-in-out 2.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(13), .textwrapper > [class^="work_texts-link"]:nth-child(13) {
+  animation: fade_in 0.8s ease-in-out 2.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(14), .textwrapper > [class^="work_texts-link"]:nth-child(14) {
+  animation: fade_in 0.8s ease-in-out 2.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(15), .textwrapper > [class^="work_texts-link"]:nth-child(15) {
+  animation: fade_in 0.8s ease-in-out 3s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(16), .textwrapper > [class^="work_texts-link"]:nth-child(16) {
+  animation: fade_in 0.8s ease-in-out 3.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(17), .textwrapper > [class^="work_texts-link"]:nth-child(17) {
+  animation: fade_in 0.8s ease-in-out 3.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(18), .textwrapper > [class^="work_texts-link"]:nth-child(18) {
+  animation: fade_in 0.8s ease-in-out 3.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(19), .textwrapper > [class^="work_texts-link"]:nth-child(19) {
+  animation: fade_in 0.8s ease-in-out 3.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(20), .textwrapper > [class^="work_texts-link"]:nth-child(20) {
+  animation: fade_in 0.8s ease-in-out 4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(21), .textwrapper > [class^="work_texts-link"]:nth-child(21) {
+  animation: fade_in 0.8s ease-in-out 4.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(22), .textwrapper > [class^="work_texts-link"]:nth-child(22) {
+  animation: fade_in 0.8s ease-in-out 4.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(23), .textwrapper > [class^="work_texts-link"]:nth-child(23) {
+  animation: fade_in 0.8s ease-in-out 4.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(24), .textwrapper > [class^="work_texts-link"]:nth-child(24) {
+  animation: fade_in 0.8s ease-in-out 4.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(25), .textwrapper > [class^="work_texts-link"]:nth-child(25) {
+  animation: fade_in 0.8s ease-in-out 5s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(26), .textwrapper > [class^="work_texts-link"]:nth-child(26) {
+  animation: fade_in 0.8s ease-in-out 5.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(27), .textwrapper > [class^="work_texts-link"]:nth-child(27) {
+  animation: fade_in 0.8s ease-in-out 5.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(28), .textwrapper > [class^="work_texts-link"]:nth-child(28) {
+  animation: fade_in 0.8s ease-in-out 5.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(29), .textwrapper > [class^="work_texts-link"]:nth-child(29) {
+  animation: fade_in 0.8s ease-in-out 5.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(30), .textwrapper > [class^="work_texts-link"]:nth-child(30) {
+  animation: fade_in 0.8s ease-in-out 6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(31), .textwrapper > [class^="work_texts-link"]:nth-child(31) {
+  animation: fade_in 0.8s ease-in-out 6.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(32), .textwrapper > [class^="work_texts-link"]:nth-child(32) {
+  animation: fade_in 0.8s ease-in-out 6.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(33), .textwrapper > [class^="work_texts-link"]:nth-child(33) {
+  animation: fade_in 0.8s ease-in-out 6.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(34), .textwrapper > [class^="work_texts-link"]:nth-child(34) {
+  animation: fade_in 0.8s ease-in-out 6.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(35), .textwrapper > [class^="work_texts-link"]:nth-child(35) {
+  animation: fade_in 0.8s ease-in-out 7s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(36), .textwrapper > [class^="work_texts-link"]:nth-child(36) {
+  animation: fade_in 0.8s ease-in-out 7.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(37), .textwrapper > [class^="work_texts-link"]:nth-child(37) {
+  animation: fade_in 0.8s ease-in-out 7.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(38), .textwrapper > [class^="work_texts-link"]:nth-child(38) {
+  animation: fade_in 0.8s ease-in-out 7.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(39), .textwrapper > [class^="work_texts-link"]:nth-child(39) {
+  animation: fade_in 0.8s ease-in-out 7.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(40), .textwrapper > [class^="work_texts-link"]:nth-child(40) {
+  animation: fade_in 0.8s ease-in-out 8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(41), .textwrapper > [class^="work_texts-link"]:nth-child(41) {
+  animation: fade_in 0.8s ease-in-out 8.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(42), .textwrapper > [class^="work_texts-link"]:nth-child(42) {
+  animation: fade_in 0.8s ease-in-out 8.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(43), .textwrapper > [class^="work_texts-link"]:nth-child(43) {
+  animation: fade_in 0.8s ease-in-out 8.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(44), .textwrapper > [class^="work_texts-link"]:nth-child(44) {
+  animation: fade_in 0.8s ease-in-out 8.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(45), .textwrapper > [class^="work_texts-link"]:nth-child(45) {
+  animation: fade_in 0.8s ease-in-out 9s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(46), .textwrapper > [class^="work_texts-link"]:nth-child(46) {
+  animation: fade_in 0.8s ease-in-out 9.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(47), .textwrapper > [class^="work_texts-link"]:nth-child(47) {
+  animation: fade_in 0.8s ease-in-out 9.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(48), .textwrapper > [class^="work_texts-link"]:nth-child(48) {
+  animation: fade_in 0.8s ease-in-out 9.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(49), .textwrapper > [class^="work_texts-link"]:nth-child(49) {
+  animation: fade_in 0.8s ease-in-out 9.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(50), .textwrapper > [class^="work_texts-link"]:nth-child(50) {
+  animation: fade_in 0.8s ease-in-out 10s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(51), .textwrapper > [class^="work_texts-link"]:nth-child(51) {
+  animation: fade_in 0.8s ease-in-out 10.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(52), .textwrapper > [class^="work_texts-link"]:nth-child(52) {
+  animation: fade_in 0.8s ease-in-out 10.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(53), .textwrapper > [class^="work_texts-link"]:nth-child(53) {
+  animation: fade_in 0.8s ease-in-out 10.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(54), .textwrapper > [class^="work_texts-link"]:nth-child(54) {
+  animation: fade_in 0.8s ease-in-out 10.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(55), .textwrapper > [class^="work_texts-link"]:nth-child(55) {
+  animation: fade_in 0.8s ease-in-out 11s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(56), .textwrapper > [class^="work_texts-link"]:nth-child(56) {
+  animation: fade_in 0.8s ease-in-out 11.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(57), .textwrapper > [class^="work_texts-link"]:nth-child(57) {
+  animation: fade_in 0.8s ease-in-out 11.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(58), .textwrapper > [class^="work_texts-link"]:nth-child(58) {
+  animation: fade_in 0.8s ease-in-out 11.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(59), .textwrapper > [class^="work_texts-link"]:nth-child(59) {
+  animation: fade_in 0.8s ease-in-out 11.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(60), .textwrapper > [class^="work_texts-link"]:nth-child(60) {
+  animation: fade_in 0.8s ease-in-out 12s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(61), .textwrapper > [class^="work_texts-link"]:nth-child(61) {
+  animation: fade_in 0.8s ease-in-out 12.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(62), .textwrapper > [class^="work_texts-link"]:nth-child(62) {
+  animation: fade_in 0.8s ease-in-out 12.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(63), .textwrapper > [class^="work_texts-link"]:nth-child(63) {
+  animation: fade_in 0.8s ease-in-out 12.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(64), .textwrapper > [class^="work_texts-link"]:nth-child(64) {
+  animation: fade_in 0.8s ease-in-out 12.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(65), .textwrapper > [class^="work_texts-link"]:nth-child(65) {
+  animation: fade_in 0.8s ease-in-out 13s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(66), .textwrapper > [class^="work_texts-link"]:nth-child(66) {
+  animation: fade_in 0.8s ease-in-out 13.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(67), .textwrapper > [class^="work_texts-link"]:nth-child(67) {
+  animation: fade_in 0.8s ease-in-out 13.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(68), .textwrapper > [class^="work_texts-link"]:nth-child(68) {
+  animation: fade_in 0.8s ease-in-out 13.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(69), .textwrapper > [class^="work_texts-link"]:nth-child(69) {
+  animation: fade_in 0.8s ease-in-out 13.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(70), .textwrapper > [class^="work_texts-link"]:nth-child(70) {
+  animation: fade_in 0.8s ease-in-out 14s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(71), .textwrapper > [class^="work_texts-link"]:nth-child(71) {
+  animation: fade_in 0.8s ease-in-out 14.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(72), .textwrapper > [class^="work_texts-link"]:nth-child(72) {
+  animation: fade_in 0.8s ease-in-out 14.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(73), .textwrapper > [class^="work_texts-link"]:nth-child(73) {
+  animation: fade_in 0.8s ease-in-out 14.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(74), .textwrapper > [class^="work_texts-link"]:nth-child(74) {
+  animation: fade_in 0.8s ease-in-out 14.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(75), .textwrapper > [class^="work_texts-link"]:nth-child(75) {
+  animation: fade_in 0.8s ease-in-out 15s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(76), .textwrapper > [class^="work_texts-link"]:nth-child(76) {
+  animation: fade_in 0.8s ease-in-out 15.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(77), .textwrapper > [class^="work_texts-link"]:nth-child(77) {
+  animation: fade_in 0.8s ease-in-out 15.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(78), .textwrapper > [class^="work_texts-link"]:nth-child(78) {
+  animation: fade_in 0.8s ease-in-out 15.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(79), .textwrapper > [class^="work_texts-link"]:nth-child(79) {
+  animation: fade_in 0.8s ease-in-out 15.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(80), .textwrapper > [class^="work_texts-link"]:nth-child(80) {
+  animation: fade_in 0.8s ease-in-out 16s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(81), .textwrapper > [class^="work_texts-link"]:nth-child(81) {
+  animation: fade_in 0.8s ease-in-out 16.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(82), .textwrapper > [class^="work_texts-link"]:nth-child(82) {
+  animation: fade_in 0.8s ease-in-out 16.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(83), .textwrapper > [class^="work_texts-link"]:nth-child(83) {
+  animation: fade_in 0.8s ease-in-out 16.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(84), .textwrapper > [class^="work_texts-link"]:nth-child(84) {
+  animation: fade_in 0.8s ease-in-out 16.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(85), .textwrapper > [class^="work_texts-link"]:nth-child(85) {
+  animation: fade_in 0.8s ease-in-out 17s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(86), .textwrapper > [class^="work_texts-link"]:nth-child(86) {
+  animation: fade_in 0.8s ease-in-out 17.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(87), .textwrapper > [class^="work_texts-link"]:nth-child(87) {
+  animation: fade_in 0.8s ease-in-out 17.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(88), .textwrapper > [class^="work_texts-link"]:nth-child(88) {
+  animation: fade_in 0.8s ease-in-out 17.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(89), .textwrapper > [class^="work_texts-link"]:nth-child(89) {
+  animation: fade_in 0.8s ease-in-out 17.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(90), .textwrapper > [class^="work_texts-link"]:nth-child(90) {
+  animation: fade_in 0.8s ease-in-out 18s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(91), .textwrapper > [class^="work_texts-link"]:nth-child(91) {
+  animation: fade_in 0.8s ease-in-out 18.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(92), .textwrapper > [class^="work_texts-link"]:nth-child(92) {
+  animation: fade_in 0.8s ease-in-out 18.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(93), .textwrapper > [class^="work_texts-link"]:nth-child(93) {
+  animation: fade_in 0.8s ease-in-out 18.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(94), .textwrapper > [class^="work_texts-link"]:nth-child(94) {
+  animation: fade_in 0.8s ease-in-out 18.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(95), .textwrapper > [class^="work_texts-link"]:nth-child(95) {
+  animation: fade_in 0.8s ease-in-out 19s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(96), .textwrapper > [class^="work_texts-link"]:nth-child(96) {
+  animation: fade_in 0.8s ease-in-out 19.2s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(97), .textwrapper > [class^="work_texts-link"]:nth-child(97) {
+  animation: fade_in 0.8s ease-in-out 19.4s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(98), .textwrapper > [class^="work_texts-link"]:nth-child(98) {
+  animation: fade_in 0.8s ease-in-out 19.6s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(99), .textwrapper > [class^="work_texts-link"]:nth-child(99) {
+  animation: fade_in 0.8s ease-in-out 19.8s forwards;
+}
+.textwrapper > [class^="work_texts-passage"]:nth-child(100), .textwrapper > [class^="work_texts-link"]:nth-child(100) {
+  animation: fade_in 0.8s ease-in-out 20s forwards;
 }
 input.form-text {
   width: 80%;
   height: 200px;
   overflow-wrap: anyware;
   line-height: 100px;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }

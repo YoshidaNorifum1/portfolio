@@ -27,15 +27,15 @@ body{
     margin-left: -20px;
     opacity: 1;
     background-color: $bgcolor;
-    transition: all 0.3s cubic-bezier(.22 .1 .19 .1) 0s;
+    transition: all 0.5s linear 0s;
   }
   &:hover .left_content{
     opacity: 1;
-    transition: all 0.3s cubic-bezier(.22 .1 .19 .1) 0s;
+    transition: all 0.5s linear 0s;
   }
    &:hover .left_drawer{
      margin-left: -200px;
-     transition: all 0.5s cubic-bezier(.22 .1 .19 .1) 0s;
+     transition: all 0.5s linear 0s;
    }
   }
 .left_wrapper{
@@ -45,7 +45,7 @@ body{
   opacity: 0.5;
   margin-left: -190px;
   background-color: #efefef;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 .left_drawer{
   position: sticky;

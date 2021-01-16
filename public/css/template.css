@@ -25,15 +25,15 @@ body {
   margin-left: -20px;
   opacity: 1;
   background-color: #fff;
-  transition: all 0.3s cubic-bezier(0.22 0.1 0.19 0.1) 0s;
+  transition: all 0.5s linear 0s;
 }
 .left_contents:hover .left_content {
   opacity: 1;
-  transition: all 0.3s cubic-bezier(0.22 0.1 0.19 0.1) 0s;
+  transition: all 0.5s linear 0s;
 }
 .left_contents:hover .left_drawer {
   margin-left: -200px;
-  transition: all 0.5s cubic-bezier(0.22 0.1 0.19 0.1) 0s;
+  transition: all 0.5s linear 0s;
 }
 .left_wrapper {
   position: sticky;
@@ -42,7 +42,7 @@ body {
   opacity: 0.5;
   margin-left: -190px;
   background-color: #efefef;
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 .left_drawer {
   position: sticky;

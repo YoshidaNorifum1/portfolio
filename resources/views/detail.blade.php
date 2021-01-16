@@ -50,9 +50,11 @@
           @break
 
         @case (3)
-	  <a href="{{$discription->txt}}">
+        <div class="work_texts-link">
+	        <a href="{{$discription->txt}}">
             {{$discription->txt}}
-	  </a>
+          </a>
+        </div>
           @break
       @endswitch
 
